@@ -3,6 +3,6 @@ import { create } from '@storybook/theming/create';
 export default create({
   base: 'light',
 
-  brandTitle: 'React Section Dividers',
+  brandTitle: 'React Collapsible Timeline',
   brandUrl: 'https://github.com/openscript-ch/react-collapsible-timeline'
 });
