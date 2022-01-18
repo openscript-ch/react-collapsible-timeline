@@ -1,0 +1,53 @@
+{
+  "name": "react-collapsible-timeline",
+  "version": "0.5.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/react-collapsible-timeline.umd.js",
+  "module": "./dist/react-collapsible-timeline.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-collapsible-timeline.es.js",
+      "require": "./dist/react-collapsible-timeline.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "build:storybook": "build-storybook",
+    "lint": "eslint . --ext .ts,.tsx",
+    "serve": "vite preview",
+    "start": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006",
+    "test": ""
+  },
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@storybook/addon-actions": "^6.3.10",
+    "@storybook/addon-docs": "^6.3.10",
+    "@storybook/addon-essentials": "^6.3.10",
+    "@storybook/addon-links": "^6.3.10",
+    "@storybook/addon-storysource": "^6.3.10",
+    "@storybook/react": "^6.3.10",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "@vitejs/plugin-react": "^1.0.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "storybook-builder-vite": "^0.1.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.6.4",
+    "vite-plugin-markdown": "^2.0.2"
+  }
+}
