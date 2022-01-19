@@ -18,5 +18,11 @@ module.exports = {
   ],
   core: {
     "builder": "storybook-builder-vite"
+  },
+  async viteFinal(config, { configType }) {
+    if(configType === "PRODUCTION") {
+      return {...config, base: './'};
+    }
+    return config;
   }
 }
