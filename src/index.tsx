@@ -1,1 +1,2 @@
-export { SimpleDivider } from './dividers/SimpleDivider';
+export { CollapsibleTimeline } from './CollapsibleTimeline';
+export { TimelineEntry } from './TimelineEntry';
