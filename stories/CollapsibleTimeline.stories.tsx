@@ -1,4 +1,4 @@
-import { CollapsibleTimeline } from '../src';
+import { CollapsibleTimeline, TimelineEntry } from '../src';
 
 export default {
   title: 'Collapsible Timeline',
@@ -6,5 +6,9 @@ export default {
 };
 
 export function Basic() {
-  return <CollapsibleTimeline />;
+  return (
+    <CollapsibleTimeline>
+      <TimelineEntry timestamp={new Date().getTime() - 1000 * 60 * 60 * 24}>One day ago</TimelineEntry>
+    </CollapsibleTimeline>
+  );
 }

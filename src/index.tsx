@@ -1,2 +1,2 @@
-export { CollapsibleTimeline } from './CollapsibleTimeline';
-export { TimelineEntry } from './TimelineEntry';
+export { CollapsibleTimeline } from './components/CollapsibleTimeline';
+export { TimelineEntry } from './components/TimelineEntry';
