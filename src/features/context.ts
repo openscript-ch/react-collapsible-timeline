@@ -19,7 +19,7 @@ export const getTimelineContext = () => {
     contextSingleton = createContext<[State, Dispatch<Actions>]>([
       emptyState,
       () => {
-        throw new Error('Not initialized');
+        throw new Error("Collapsible timeline context isn't initialized.");
       },
     ]);
   }
