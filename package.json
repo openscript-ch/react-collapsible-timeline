@@ -23,12 +23,13 @@
     "coverage": "vitest --coverage"
   },
   "dependencies": {
-    "@emotion/react": "^11.7.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.10",
+    "@emotion/babel-plugin": "^11.7.2",
+    "@emotion/react": "^11.7.1",
     "@storybook/addon-actions": "^6.4.13",
     "@storybook/addon-docs": "^6.4.13",
     "@storybook/addon-essentials": "^6.4.13",

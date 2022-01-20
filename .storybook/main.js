@@ -1,3 +1,5 @@
+const react = require("@vitejs/plugin-react");
+
 module.exports = {
   stories: [
     "../stories/Start.stories.mdx",
@@ -20,6 +22,20 @@ module.exports = {
     "builder": "storybook-builder-vite"
   },
   async viteFinal(config, { configType }) {
+    config.plugins = config.plugins.filter(
+      (plugin) =>
+        !(Array.isArray(plugin) && plugin[0]?.name.includes("vite:react"))
+    );
+
+    config.plugins.push(
+      react({
+        jsxImportSource: "@emotion/react",
+        babel: {
+          plugins: ["@emotion/babel-plugin"],
+        },
+      })
+    );
+
     if(configType === "PRODUCTION") {
       return {...config, base: './'};
     }
