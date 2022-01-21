@@ -20,9 +20,9 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build storybook
         run: yarn build:storybook
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+      - name: Deploy to Github Pages
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
-          BRANCH: gh-pages
-          FOLDER: storybook-static
-          CLEAN: true
+          branch: gh-pages
+          folder: storybook-static
+          clean: true
