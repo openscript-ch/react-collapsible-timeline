@@ -26,8 +26,10 @@ module.exports = {
       (plugin) => !(Array.isArray(plugin) && plugin[0]?.name.includes("vite:react"))
     );
 
+    config.optimizeDeps.include = [...(config.optimizeDeps.include) || [], '@emotion/react/jsx-dev-runtime'];
     config.plugins.push(
       react({
+        exclude: [/\.stories\.(t|j)sx?$/, /node_modules/],
         jsxImportSource: "@emotion/react",
         babel: {
           plugins: ["@emotion/babel-plugin"],
