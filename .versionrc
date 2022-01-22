@@ -25,9 +25,6 @@
       "section": "🌍 Internationalization"
     },
     {
-      "type": "build"
-    },
-    {
       "type": "ci",
       "hidden": true
     }
