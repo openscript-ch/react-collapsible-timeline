@@ -1,8 +1,9 @@
 name: Continuous deployment (NPM)
 
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - v*
 
 jobs:
   build-and-deploy:
@@ -18,6 +19,9 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      - run: yarn run release:create-github-release
+        env:
+          CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Publish package on npmjs.org
         run: yarn publish --access public
         env:
