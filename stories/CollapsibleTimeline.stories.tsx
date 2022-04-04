@@ -3,6 +3,11 @@ import { CollapsibleTimeline, TimelineEntry } from '../src';
 export default {
   title: 'Collapsible Timeline',
   component: CollapsibleTimeline,
+  parameters: {
+    docs: {
+      page: null,
+    },
+  },
 };
 
 export function Basic() {

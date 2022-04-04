@@ -1,5 +1,5 @@
 export const parameters = {
-  viewMode: 'docs',
+  viewMode: 'canvas',
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {
