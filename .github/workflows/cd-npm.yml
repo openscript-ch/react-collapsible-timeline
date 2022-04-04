@@ -12,16 +12,22 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+
       - name: Configure node for npmjs.org as registry
         uses: actions/setup-node@v2
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
       - run: yarn run release:create-github-release
         env:
           CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
       - name: Publish package on npmjs.org
         run: yarn publish --access public
         env:
