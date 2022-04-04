@@ -34,6 +34,8 @@
   "scripts": {
     "build": "vite build",
     "build:storybook": "build-storybook",
+    "check:format": "eslint . --max-warnings 0",
+    "check:types": "tsc --noEmit",
     "lint": "eslint . --max-warnings 0",
     "release:major": "standard-version --release-as major && git push --follow-tags",
     "release:minor": "standard-version --release-as minor && git push --follow-tags",
