@@ -1,6 +1,25 @@
 {
   "name": "react-collapsible-timeline",
   "version": "0.1.2",
+  "description": "A collapsible timeline component for React.",
+  "keywords": [
+    "react",
+    "react-component",
+    "typescript",
+    "timeline",
+    "interactive timeline",
+    "collapsible timeline"
+  ],
+  "homepage": "https://github.com/openscript-ch/react-collapsible-timeline",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openscript-ch/react-collapsible-timeline"
+  },
+  "bugs": {
+    "url": "https://github.com/openscript-ch/react-collapsible-timeline/issues"
+  },
+  "author": "openscript GmbH <hi+npm@openscript.ch>",
+  "license": "MIT",
   "files": [
     "dist"
   ],
