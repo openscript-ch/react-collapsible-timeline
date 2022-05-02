@@ -13,8 +13,6 @@ Add the package with the package manager via NPMs or GitHubs registry of choice 
 
 ## Resources
 
-- Articles
-  - [**Use Vite in Library Mode**](https://vitejs.dev/guide/build.html#library-mode)
 - Tools
   - [**Vite**](https://vitejs.dev/): Next Generation Frontend Tooling
   - [**Vitest**](https://vitest.dev/): A blazing fast unit-test framework powered by Vite.
